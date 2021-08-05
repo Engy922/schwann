@@ -9,7 +9,7 @@ print('Biostack:',biostack)
 twitter_handle='@Engy14705267'
 print('Twitter_handle:',twitter_handle)
 Slack_handle='Engy'
-def hammingDist(  Slack_handle,  twitter_handle):
+def hammingDist( Slack_handle,  twitter_handle):
     i = 0
     count = 0
 
@@ -17,16 +17,17 @@ def hammingDist(  Slack_handle,  twitter_handle):
         if (Slack_handle[i] != twitter_handle[i]):
             count += 1
         i += 1
+    count = count + ( len(twitter_handle) - len(Slack_handle))
     return count
 
 
+
 # Driver code
-Slack_handle = "Engy"
+Slack_handle = "@Engy"
 twitter_handle= "@Engy14705267"
 
 # function call
 print('haming distance=',hammingDist(Slack_handle, twitter_handle))
-
 
 
 
